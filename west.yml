@@ -1,0 +1,18 @@
+manifest:
+  version:
+    1.2
+
+  projects:
+    - name: zephyr
+      url: https://github.com/zephyrproject-rtos/zephyr
+      revision: v3.6.0
+      clone-depth: 1
+      import:
+        file: west.yml
+        path-prefix: deps
+        name-allowlist:
+          - cmsis
+          - hal_espressif
+
+  self:
+    path: .
