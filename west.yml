@@ -13,6 +13,7 @@ manifest:
         name-allowlist:
           - cmsis
           - hal_espressif
+          - tinycrypt
 
   self:
     path: .

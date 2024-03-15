@@ -1,6 +1,30 @@
 Language:      Cpp
 BasedOnStyle:  Google
+LineEnding:    LF
 
 UseTab: AlignWithSpaces
 IndentWidth: 8
 TabWidth:    8
+BracedInitializerIndentWidth: 8
+ConstructorInitializerIndentWidth: 8
+ContinuationIndentWidth: 8
+
+AllowAllArgumentsOnNextLine: true
+AllowAllParametersOfDeclarationOnNextLine: true
+AlignAfterOpenBracket: BlockIndent
+
+AlignConsecutiveAssignments:
+  Enabled: true
+  AcrossComments: true
+  AlignCompound:  true
+  PadOperators:   true
+AlignConsecutiveBitFields:
+  Enabled: true
+  AcrossEmptyLines: true
+  AcrossComments:   true
+AlignConsecutiveDeclarations:
+  Enabled: true
+AlignConsecutiveMacros:
+  Enabled: true
+  AcrossEmptyLines: true
+  AcrossComments:   true
