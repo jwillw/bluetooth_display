@@ -2,6 +2,7 @@
 #include <zephyr/bluetooth/uuid.h>
 #include <zephyr/logging/log.h>
 
+#include "led_display.hpp"
 #include "ots.hpp"
 
 LOG_MODULE_REGISTER(led_display);
@@ -21,6 +22,12 @@ static const bt_data sd[] = {
 
 int main() {
 	int err;
+	led_display.set_image({0xff, 0xff, 0xff});
+	err = led_display.update_display();
+	if (err) {
+		LOG_ERR("LED write failed (err %d)\n", err);
+		return 0;
+	}
 	err = bt_enable(nullptr);
 	if (err) {
 		LOG_ERR("Bluetooth init failed (err %d)\n", err);

@@ -13,6 +13,9 @@ AllowAllArgumentsOnNextLine: true
 AllowAllParametersOfDeclarationOnNextLine: true
 AlignAfterOpenBracket: BlockIndent
 
+IndentAccessModifiers: false
+AccessModifierOffset: -8
+
 AlignConsecutiveAssignments:
   Enabled: true
   AcrossComments: true
